@@ -1,13 +1,14 @@
-# Nuke-LensFX_GQ
-Unified controller for defocus tools with built in lens sets
 ## LensFX_GQ
 This is my all in one tool for depth of field, it brings several popular nodes together into one gizmo. The nodes are then linked and controlled via a set of simple, real world controls.
+
+![Overview](./documentationAssets/overview.png)
 
 The main goal behind this tool was to create a digital "Lens Sets" workflow, giving artist a set of preset lenses with pre-defined looks. The aim being to keep the look across a project consistent. You can customise each lenses focal length and optical qualities. With some qualities, the more you open the lens, the stronger the effects.
 
 One common problem with compositing depth of field is artefacts around edges, sometimes switching tools is enough to solve it. The best way to get rid of the problem (without Deep) it is to separate out the comp into BG and FG layers and defocus them individually. This tool supports that workflow with a Parent/Child relationship, you are able to duplicate the gizmo, and use the "Set Master" button to make that node control others. Child nodes will become locked, meaning you only have to tweak the Parent.
 
-![Add 3rd Party DOF Tools](./documentationAssets/demo.gif)
+
+![Demo](./documentationAssets/demo.gif)
 
 ZDefocus is included by default, but does not support physical lens simulation, you are able to customise the min and max blur of each lens using the lens set, and the aperture slider will blend between these values. pgBokeh and Optical Z Defocus both support real world simulation, and the strength of the blur is driven solely by the Aperture and sensor size values.
 
